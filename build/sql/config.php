@@ -1,5 +1,5 @@
 <?php 
-$db_name="workers";
-$db_username="root";
-$db_password="123456";
+$db_name="test";
+$db_username="test";
+$db_password="test";
 ?>
