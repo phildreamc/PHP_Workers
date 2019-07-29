@@ -1,0 +1,321 @@
+@CHARSET "UTF-8";
+.register-main {
+    background: url(../images/register/bg2.jpg) top center no-repeat, url(../images/register/bg.jpg) top center no-repeat, #151925
+}
+
+.register-wp {
+    width: 1200px;
+    padding: 160px 0 90px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.register-wp img {
+    width: 500px;
+    display: block;
+    margin: 0 auto
+}
+
+.register-content, .regMb-Check {
+    width: 500px;
+    margin: 0 auto;
+    background: #3f4660;
+    padding: 35px 0;
+}
+
+.register-content .title {
+    font-size: 32px;
+    font-weight: bolder;
+    padding-bottom: 36px;
+    background-image: linear-gradient(to bottom, #fdedcf, #d5b986);
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+#j-tab-register li {
+    display: inline-block;
+    width: 178px;
+    height: 40px;
+    background: #816d41;
+    line-height: 3;
+    margin-right: -4px;
+    cursor: pointer
+}
+
+#j-tab-register li a {
+    color: #fff
+}
+
+#j-tab-register li.active {
+    background: #c8a96f
+}
+
+#j-tab-register li.this1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+
+#j-tab-register li.this2 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+.register {
+    padding: 35px 0;
+    color: #c2caec;
+}
+
+.register > .md_in {
+    position: relative;
+    width: 355px;
+    margin: 0 auto 15px auto;
+}
+
+.register > .md_in input[type="text"], .register > .md_in input[type="password"]{
+    display: block;
+    width: 305px;
+    height: 40px;
+    background: #252d41;
+    border: 1px solid #546180;
+    border-radius: 5px;
+    padding-left: 50px;
+    color: #ffffff;
+}
+
+.register > .md_in i {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    font-size: 25px;
+    color: #c8a96f;
+}
+
+.register > .md_in i.eye{
+    position: absolute;
+    top: 9px;
+    left:300px;
+    font-size: 25px;
+    color: #c8a96f;
+}
+
+.register > .md_in .yzb-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #ffffff;
+    width: 119px;
+    height: 32px;
+    border-radius: 5px;
+}
+
+.register-cb {
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    text-align: left;
+    color: #c2caec;
+    line-height: 33px;
+}
+
+.register-cb label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    border: 2px solid #a88b5e;
+    border-radius: 5px;
+}
+.register-cb input[type=checkbox] {
+    width:35px;
+    height:35px;
+    visibility: hidden;
+}
+.register-cb input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+.register-cb label:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 2px solid #ac946f;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+.btn-register{
+    width: 356px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+#register-img{
+    width: 120px;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    height: 35px;
+}
+
+
+.regMb-Check .user-box {
+    color: #c0caef;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.regMb-Check .user-list li {
+    position: relative;
+    display: inline-block;
+    padding: 30px;
+}
+
+.regMb-Check .user-list li i {
+    display: none;
+}
+
+.regMb-Check .user-list li.cur i {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    display: block;
+    color: #c2a56e;
+    font-size: 30px;
+}
+
+.regMb-Check .user-list li img {
+    width: 100px;
+    border: 2px solid #363c51;
+    border-radius: 97px;
+    background: #363c51;
+    padding: 10px;
+}
+
+.regMb-Check .user-list li.cur img {
+    border: 2px solid #c2a56e;
+}
+
+.btn-box > a {
+    display: inline-block;
+    height: 40px;
+    border-radius: 3px;
+    margin: 0 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.reg1-user-name{
+    display: block;
+    width: 200px;
+    height: 40px;
+    background: #252d41;
+    border: 1px solid #546180;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+
+
+
+
+/*弹窗*/
+#modal-login {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000002 !important;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0
+}
+
+#modal-login .modal-dialog {
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+    width: 510px;
+    height: 340PX;
+    background: #3e455e;
+    border-radius: 5px;
+    border: 2px solid #c8a96f;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+#modal-login .modal-dialog .close {
+    position: absolute;
+    top: -39px;
+    right: -35px;
+    width: 32px;
+    height: 32px;
+    background: url(/images/promotions/dialogClose.png) top center no-repeat;
+    font-size: 30px;
+    cursor: pointer
+}
+
+.rightBox > .title {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #000
+}
+
+#dialogloginname, #dialogpassword {
+    width: 233px;
+    height: 44px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border-radius: 5px
+}
+
+#modal-title {
+    width: 430px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 2.5;
+    color: #f0bb46;
+    font-weight: bolder;
+    border-bottom: 2px solid #5e6583;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001 !important;
+    background-color: #000
+}
+
+.modal-backdrop.in {
+    opacity: .9;
+    filter: alpha(opacity=90)
+}
+
+#modal-content {;
+    margin: 0 auto;
+    padding: 10px 30px 15px;
+    color: #c0caef
+}

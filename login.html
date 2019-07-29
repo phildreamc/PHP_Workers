@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://yanshi.sucaihuo.com/modals/51/5133/demo/login/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>登陆页面</title>
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <script type="text/javascript" src="./css/jquery.min.js.下载"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".name input").focus(function(){
+                $(this).prev("i").css({"background-image":"url(img/user2.png)"});
+            });
+            $(".name input").blur(function(){
+                $(this).prev("i").css({"background-image":"url(img/user1.png)"});
+            });
+            $(".password input").focus(function(){
+                $(this).prev("i").css({"background-image":"url(img/password2.png)"});
+            });
+            $(".password input").blur(function(){
+                $(this).prev("i").css({"background-image":"url(img/password1.png)"});
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <header><em>AE</em><span>年假系统</span></header>
+            <article>
+                <section>
+                    <aside>
+                        <em>
+                            <img src="./css/user.png">
+                        </em>
+                         <form action="login.php" method="post">
+                            <p class="name"><i></i><input type="text" name="username" class="userName" placeholder="请输入用户名"></p>
+                            <p class="password"><i></i><input type="password" name="password" class="pwd" placeholder="请输入密码"></p>
+                            <button>登录</button>
+                            <div class="clear"></div>
+                        </form>
+                    </aside>
+                   
+                </section>               
+            </article>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+
+
+</body></html>
